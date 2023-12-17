@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+            android:descendantFocusability="blocksDescendants"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="25dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="10dp" android:layout_marginTop="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" app:srcCompat="@drawable/goldencoins" android:id="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="13dp"
+                    app:layout_constraintEnd_toStartOf="@+id/good_price" android:layout_marginEnd="10dp"/>
+            <ImageView
+                    android:layout_width="81dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="77dp" tools:srcCompat="@tools:sample/avatars" android:id="@+id/good_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"/>
+            <TextView
+                    android:text="This is a magic good which could help you"
+                    android:layout_width="144dp"
+                    android:layout_height="39dp" android:id="@+id/good_describe"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/good_icon" android:layout_marginTop="7dp"
+                    app:layout_constraintTop_toBottomOf="@+id/good_name"/>
+            <TextView
+                    android:text="Name"
+                    android:textSize="20dp"
+                    android:textColor="@color/orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/good_name"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp" android:layout_marginStart="10dp"
+                    app:layout_constraintStart_toEndOf="@+id/good_icon"/>
+            <Button
+                    android:text="BUY"
+                    android:background="@drawable/background_time"
+                    android:layout_width="82dp"
+                    android:layout_height="28dp" android:id="@+id/button14"
+                    android:layout_marginStart="52dp"
+                    app:layout_constraintStart_toEndOf="@+id/good_describe" android:layout_marginTop="18dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15"/>
+            <TextView
+                    android:text="350"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/good_price"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="19dp" app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp" app:srcCompat="@drawable/goldencoins"
+            android:id="@+id/imageView8" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp" android:layout_marginStart="6dp"
+            app:layout_constraintStart_toEndOf="@+id/textView10"/>
+    <ListView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/good_card"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp">
+    </ListView>
+    <TextView
+            android:text="Balance: "
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView10"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="12dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="212dp"/>
+    <TextView
+            android:text="1000"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/balance_money"
+            android:layout_marginStart="6dp" app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

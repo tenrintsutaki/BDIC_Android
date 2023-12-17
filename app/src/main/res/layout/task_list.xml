@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="677dp"
+            android:layout_height="99dp"
+            app:cardCornerRadius="45dp"
+            app:cardElevation="45dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="720dp"
+                android:layout_height="130dp">
+
+            <TextView
+                    android:text="TaskName"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_width="140dp"
+                    android:layout_height="38dp" android:id="@+id/task_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="28dp"/>
+            <TextView
+                    android:text="Have once speed more than 10km/h"
+                    android:textSize="20dp"
+                    android:layout_width="240dp"
+                    android:layout_height="26dp" android:id="@+id/task_describe"
+                    android:layout_marginStart="69dp"
+                    app:layout_constraintStart_toEndOf="@+id/task_name" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="37dp"/>
+            <TextView
+                    android:text="300"
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/task_award"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="30dp" android:layout_marginStart="30dp"
+                    app:layout_constraintStart_toEndOf="@+id/task_describe"/>
+            <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/goldencoins"
+                    android:id="@+id/imageView18"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintStart_toEndOf="@+id/task_award" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="30dp"/>
+            <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="69dp" app:srcCompat="@drawable/correct" android:id="@+id/taskConditionIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView18" android:layout_marginEnd="33dp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

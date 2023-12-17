@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:background="@color/purple_500"
+                    android:text="Purple"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/blue"
+                    android:layout_marginTop="87dp"
+                    app:layout_constraintTop_toBottomOf="@+id/presentBar2" android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toEndOf="@+id/orange"/>
+            <Button
+                    android:background="@color/flame"
+                    android:text="Flame"
+                    android:width="20dp"
+                    android:height="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/flame"
+                    android:layout_marginTop="42dp"
+                    app:layout_constraintTop_toBottomOf="@+id/orange" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"/>
+            <TextView
+                    android:background="@drawable/background_time"
+                    android:layout_width="409dp"
+                    android:layout_height="5dp" android:id="@+id/presentBar3"
+                    android:layout_marginTop="244dp" app:layout_constraintTop_toBottomOf="@+id/flame"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                    android:scaleType="fitXY"
+                    android:tag="yellow"
+                    android:onClick="changeBackGround"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" app:srcCompat="@drawable/yello_background" android:id="@+id/bg_yellow"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" android:layout_marginStart="67dp"
+                    app:layout_constraintStart_toEndOf="@+id/bg_green" android:layout_marginTop="31dp"/>
+            <TextView
+                    android:text="Styles"
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView7"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintTop_toBottomOf="@+id/presentBar2" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"/>
+            <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="80dp"
+                    android:onClick="changeBackGround"
+                    android:tag="blue"
+                    android:layout_height="80dp" app:srcCompat="@drawable/blue_background" android:id="@+id/bg_blue"
+                    android:layout_marginTop="31dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="17dp"/>
+            <Button
+                    android:background="@color/teal_700"
+                    android:text="Teal"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/cyan"
+                    android:layout_marginTop="87dp"
+                    app:layout_constraintTop_toBottomOf="@+id/presentBar2" android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toEndOf="@+id/blue"/>
+            <Button
+                    android:background="@color/sky"
+                    android:text="Sky"
+                    android:width="20dp"
+                    android:height="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/sky"
+                    android:layout_marginTop="42dp"
+                    app:layout_constraintTop_toBottomOf="@+id/blue" android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toEndOf="@+id/flame"/>
+            <TextView
+                    android:text="Backgrounds"
+                    android:textSize="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/textView6"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintTop_toBottomOf="@+id/presentBar3" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"/>
+            <TextView
+                    android:background="@drawable/background_time"
+                    android:layout_width="409dp"
+                    android:layout_height="5dp" android:id="@+id/presentBar2"
+                    android:layout_marginTop="14dp" app:layout_constraintTop_toBottomOf="@+id/backButton"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                    android:scaleType="fitXY"
+                    android:tag="green"
+                    android:onClick="changeBackGround"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" app:srcCompat="@drawable/green_background" android:id="@+id/bg_green"
+                    android:layout_marginStart="68dp"
+                    app:layout_constraintStart_toEndOf="@+id/bg_blue" android:layout_marginTop="158dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"/>
+            <Button
+                    android:background="@color/leaf"
+                    android:text="Leaf"
+                    android:width="20dp"
+                    android:height="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/leaf"
+                    android:layout_marginTop="42dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cyan" android:layout_marginStart="56dp"
+                    app:layout_constraintStart_toEndOf="@+id/sky"/>
+            <Button
+                    android:background="@color/orange"
+                    android:text="Orange"
+                    android:width="20dp"
+                    android:height="20dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/orange"
+                    android:layout_marginTop="35dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="17dp"/>
+            <Button
+                    android:background="@drawable/background_time"
+                    android:layout_width="96dp"
+                    android:drawableLeft="@drawable/ic_arrow_left"
+                    android:gravity="center"
+                    android:text="Back"
+                    android:textColor="@color/black"
+                    android:layout_height="33dp" android:id="@+id/backButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="13dp"/>
+            <Button
+                    android:text="PINK"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/pink"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp" android:layout_marginTop="42dp"
+                    app:layout_constraintTop_toBottomOf="@+id/flame"/>
+            <Button
+                    android:text="DARK"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/dark"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toBottomOf="@+id/flame"
+                    app:layout_constraintStart_toEndOf="@+id/pink" android:layout_marginStart="56dp"/>
+            <Button
+                    android:text="DARK"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/pink" android:layout_marginTop="42dp"/>
+            <Button
+                    android:text="RAINBOW"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/rainbow"
+                    app:layout_constraintTop_toBottomOf="@+id/dark" android:layout_marginTop="42dp"
+                    app:layout_constraintStart_toEndOf="@+id/button20" android:layout_marginStart="56dp"/>
+            <Button
+                    android:text="DARK"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/button12"
+                    app:layout_constraintTop_toBottomOf="@+id/dark" android:layout_marginTop="44dp"
+                    app:layout_constraintStart_toEndOf="@+id/rainbow" android:layout_marginStart="56dp"/>
+            <Button
+                    android:text="GRAY"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/gray"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintTop_toBottomOf="@+id/flame"
+                    app:layout_constraintStart_toEndOf="@+id/dark" android:layout_marginStart="56dp"/>
+            <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" app:srcCompat="@drawable/goldencoins"
+                    android:id="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="12dp" android:layout_marginStart="156dp"
+                    app:layout_constraintStart_toEndOf="@+id/backButton"/>
+            <TextView
+                    android:text="1000"
+                    android:textSize="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/currentMoney"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="12dp" android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"/>
+            <ImageView
+                    android:layout_width="80dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="80dp" app:srcCompat="@drawable/galaxy" android:id="@+id/imageView14"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" android:layout_marginStart="68dp"
+                    app:layout_constraintStart_toEndOf="@+id/bg_blue"/>
+            <ImageView
+                    android:layout_width="80dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="80dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+                    android:id="@+id/imageView16"
+                    android:layout_marginTop="47dp"
+                    app:layout_constraintTop_toBottomOf="@+id/bg_yellow" android:layout_marginStart="67dp"
+                    app:layout_constraintStart_toEndOf="@+id/bg_green"/>
+            <ImageView
+                    android:layout_width="80dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="80dp" app:srcCompat="@drawable/rainbow" android:id="@+id/imageView17"
+                    android:layout_marginTop="45dp"
+                    app:layout_constraintTop_toBottomOf="@+id/bg_blue" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="17dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

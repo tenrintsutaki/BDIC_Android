@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <ListView
+            android:layout_width="419dp"
+            android:layout_height="353dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/menu_list" android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="104dp"/>
+    <ImageView
+            android:layout_width="466dp"
+            android:layout_height="367dp" app:srcCompat="@drawable/blue_background" android:id="@+id/user_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="416dp" app:layout_constraintStart_toStartOf="parent"
+    />
+    <ImageView
+            android:layout_width="214dp"
+            android:layout_height="170dp" app:srcCompat="@drawable/common_google_signin_btn_icon_dark"
+            android:id="@+id/imageView3"
+            android:scaleType="centerInside"
+            android:background="@drawable/cicular_ring_avatar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"/>
+    <Button
+            android:text="Login"
+            android:layout_width="110dp"
+            android:layout_height="46dp" android:id="@+id/button_person"
+            android:textColor="@color/white"
+            android:background="@drawable/background_time"
+            android:textSize="15dp"
+            android:layout_marginTop="41dp"
+            app:layout_constraintTop_toBottomOf="@+id/user_name" android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"/>
+    <TextView
+            android:text="Guest"
+            android:layout_width="117dp"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_height="65dp" android:id="@+id/user_name"
+            app:layout_constraintStart_toEndOf="@+id/imageView3" android:layout_marginStart="24dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="52dp"/>
+    <TextView
+            android:layout_width="412dp"
+            android:layout_height="68dp" android:id="@+id/textView5" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/light_orange"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
+    />
+    <Button
+            android:gravity="center"
+            android:text="Data"
+            android:textColor="@color/white"
+            android:layout_width="83dp"
+            android:layout_height="45dp" android:id="@+id/button6"
+            app:layout_constraintStart_toEndOf="@+id/button8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:drawableTop="@drawable/ic_notifications_black_24dp"
+            android:background="@drawable/background_time_small"
+            app:iconGravity="textStart" android:layout_marginBottom="14dp" android:layout_marginEnd="24dp"/>
+    <Button
+            android:gravity="center"
+            android:text="sport"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/ic_dashboard_black_24dp"
+            android:layout_width="137dp"
+            android:layout_height="49dp" android:id="@+id/button5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/background_time_small"
+            android:textSize="19dp"
+            app:iconSize="24dp" app:iconGravity="top" android:layout_marginBottom="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/button6" android:layout_marginEnd="28dp"/>
+    <Button
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:drawableTop="@drawable/ic_home_black_24dp"
+            android:layout_width="83dp"
+            android:layout_height="45dp" android:id="@+id/button7"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:background="@drawable/background_time_small"
+            app:iconPadding="0dp" app:iconGravity="textStart" android:layout_marginBottom="14dp"
+            android:layout_marginStart="24dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
